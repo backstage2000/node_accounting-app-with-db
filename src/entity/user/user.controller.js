@@ -1,4 +1,4 @@
-const { usersRepository } = require('./User.repository');
+const { usersRepository } = require('./user.repository');
 
 const getAll = async (req, res) => {
   const users = await usersRepository.getAll();
