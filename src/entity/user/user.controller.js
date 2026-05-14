@@ -10,7 +10,7 @@ const createUser = async (req, res) => {
   const { name } = req.body;
 
   if (!name) {
-    return res.status(400).json({ message: 'Name is required' });
+    return res.status(400).json({ message: 'name  required' });
   }
 
   const user = await usersRepository.createUser(name);
